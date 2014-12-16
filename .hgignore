@@ -1,4 +1,5 @@
 syntax: glob
 
+src/301
 *~
 *.swp

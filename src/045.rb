@@ -36,12 +36,14 @@ def inv_hexa(x)
   if nat_0(n) then n.to_i else nil end
 end
 
-n = 286
-loop do
-  t = tri(n)
-  if inv_penta(t) and inv_hexa(t)
-    puts t
-    exit
+if __FILE__ == $0
+  n = 286
+  loop do
+    t = tri(n)
+    if inv_penta(t) and inv_hexa(t)
+      puts t
+      exit
+    end
+    n +=1
   end
-  n +=1
 end

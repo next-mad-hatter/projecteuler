@@ -38,7 +38,7 @@ end
 
 val _ =
 let
-  val (n,m) = search 1900
+  val (n,m) = search 1 (* 1900 *)
 in
   print "Found " ;
   (print o Int.toString) n ;
@@ -46,5 +46,4 @@ in
   (print o Int.toString) m ;
   print "\n"
 end
-
 

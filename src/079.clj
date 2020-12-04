@@ -1,4 +1,4 @@
-(ns madhat.adventofcode.day-three
+(ns madhat.projecteuler
   (:require [clojure.string :as str]))
 
 (defn input->words [input]
@@ -14,7 +14,6 @@
    (input->words)))
 
 (def shortest
-
   (letfn [(shorten-word [ch word]
             (if (= ch (first word)) (next word) word))
           (shorten-words [ch words]
